@@ -21,6 +21,7 @@ En el primer nanosegundo en el que abrimos la web en el navegador vas a abrir ta
 Los elementos de HTML que va a renderizar el navegador SIEMPRE se encontrarán dentro del elemento <body></body>, algunos serán visibles para el usuario y otros no.
 
 EJ: AÑADIR ESTOS ELEMENTOS AL HTML:
+
     - Un subtitulo.
     - Un sub-subtitulo
 
