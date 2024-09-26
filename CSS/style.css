@@ -1,0 +1,21 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* Esta propiedad hace que el "modelo de caja" de css funcione de una forma mas lógica para nosotros. */
+
+}
+
+body{
+    background-color: yellow;
+    padding: 1em;
+}
+
+h1{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border: 6px red solid;
+    margin: 3rem;
+    text-align: center;
+}

@@ -62,3 +62,24 @@ Podemos añadir código CSS dentro del HTML en el elemento <head></head> usando 
 
 3. CSS externo en un archivo propio de CSS. ESTA SÍ ES ELA FORMA CORRECTA!.
 El archivo CSS se enlazará al HTML usando la etiqueda <link> dentro del elemento <head></head>
+
+## SELECTORES BASICOS CSS
+
+1. Selectores de elemento (tag): seleccionan todos los elementos del mismo tipo por su nombre de etiqueta.
+
+2. Selector por clase (class): usa un punto (.) seguido del nombre de la clase.
+El o los elementos de HTML deben contener el nombre de la clase dentro del atributo class. dentro del mismo elemento puede haber mas de una clase.
+    Ej:
+     html --> <h2 class="red-text big-text">Listas</h2>
+     CSS --> .red-text { color: red;}
+     CSS --> .big-text { font-size: 2em;}
+
+3. Selector por ID. usa el simbolo # seguido del nombre del ID. Los IDs son únicos en el HTML por loque añadir propiedades de CSS se hace menos versatil.
+    ej:
+     html --> <h2 id="sptitle">Listas</h2>
+     CSS --> #sptitle { color: red;}
+
+4. Selector universal (*) seleccionaremos TODOS los elementos HTML para sobrescribir o añadir ciertas propiedades de CSS
+
+### JERARQUIA SELECTORES CSS
+ID >> CLASS >> TAG >> *
