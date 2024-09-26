@@ -1,4 +1,4 @@
-# REPASO_HTML_VJ_DWA_24_25
+# REPASO_HTML_VJ_DWA_24_25 -- 19/09/24
 
 El archivo index.html debe llamarse siempre así, para que el servidor web (cuando la web sea publica en internet) sepa que archivo debe cargar por defecto.
 
@@ -36,3 +36,29 @@ EJ: AÑADIR ESTOS ELEMENTOS AL HTML:
     - Descargar una imagen (jpg o png o webp) y convertirla en un enlace a un artículo de wikipedia.
 
     - Agrupar 2 de los 3 parrafos dentro de otro elemento de HTML que funcione como un contenedor.
+# REPASO_HTML_VJ_DWA_24_25 -- 26/09/24
+## CSS (Cascading Style Sheet)
+CSS no es un lenguaje de programación, es un lenguaje de estilos. Estos estilos agregan a nuestro HTML unas caracteristicas visuales y estructurales mas interesantes para el usuario y mas complejas en cuanto a funcionamiento.
+Es indispensable el uso de CSS para crear una interfaz responsive.
+
+1. In line CSS. NO ES LA FORMA CORRECTA.
+Añade el estilo de CSS o propiedades directamente dentro de los elemntos de HTML usando el atributo style (en la primera etiqueta del elemento HTML).
+    Ej: <h1 style="Color: tomato; font-size:4rem;> Hello world </h1>
+
+2. CSS interno. NO ES LA FORMA CORRECTA.
+Podemos añadir código CSS dentro del HTML en el elemento <head></head> usando el elemento <style></style>
+    ej:  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Repaso HTML | DWA</title>
+        <style>
+            h1 {
+                color: aqua;
+                font-size; 3em;
+            }
+        </style>
+    </head>
+
+3. CSS externo en un archivo propio de CSS. ESTA SÍ ES ELA FORMA CORRECTA!.
+El archivo CSS se enlazará al HTML usando la etiqueda <link> dentro del elemento <head></head>
