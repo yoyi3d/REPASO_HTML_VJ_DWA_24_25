@@ -3,19 +3,83 @@
    padding: 0;
    box-sizing: border-box;
    /* Esta propiedad hace que el "modelo de caja" de css funcione de una forma mas lógica para nosotros. */
+    font-size: 16px;
 
 }
 
-body{
-    background-color: yellow;
-    padding: 1em;
+header{
+    height: 10vh;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+header button{
+    width: 12rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
 }
 
 h1{
-    background-color: black;
-    color: white;
+    font-size: 2.5rem;
+
+}
+
+nav .menu-flex{
+    background-color: rgb(129, 129, 206);
+    list-style: none;
     padding: 2rem;
-    border: 6px red solid;
-    margin: 3rem;
-    text-align: center;
+    /* gap: 1rem; */
+
+    justify-content: space-around;
+    display: flex;
+
+}
+
+nav .menu-flex a{
+    background-color: black;
+    padding: 0.3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.33s;
+}
+
+nav .menu-flex a:hover{
+    color: red;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+
+/* Dentro de los parentesis del media query definimos el breakpoint en pixeles */
+@media screen and (max-width: 700px) {
+   
+    header{
+        background-color: cyan;
+    }
+    
+    h1{
+        font-size: 1rem;
+    }   
+    
+    nav .menu-flex{
+        text-align: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    section a img{
+    display: none;
+    }
 }

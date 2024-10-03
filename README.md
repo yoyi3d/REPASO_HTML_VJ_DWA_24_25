@@ -81,5 +81,83 @@ El o los elementos de HTML deben contener el nombre de la clase dentro del atrib
 
 4. Selector universal (*) seleccionaremos TODOS los elementos HTML para sobrescribir o añadir ciertas propiedades de CSS
 
+
+
+
 ### JERARQUIA SELECTORES CSS
 ID >> CLASS >> TAG >> *
+
+EL MODELO DE CAJA de HTML/CSS lo que nos indica es que todos los elementos HTML son cajas con 4 partes:
+
+ - Tamaño de caja
+ - Padding (desplaza al contenido de la caja)
+ - El borde de la caja
+ - El margin (desplaza los elementos adyacentes de la caja)
+
+ COLOR Y FONDO
+ - color
+ - background-color
+ - background-image:
+ - opacity
+
+ TIPOGRAFÍA
+ - font-size
+ - font-family
+ - font-weight
+ - line-height
+ - font style
+ - text-align
+
+ DIMENSIONES
+ - width y height
+ - max-width y max-height
+ - min-width y min-height
+
+ ESPACIADO
+ - padding
+ - margin
+
+ BORDE Y SOMBRAS
+ - border
+ - box-shadow
+ - border-radius
+
+
+VW y VH
+
+-VW -> Viewport width es una medida relativa al tamaño del ancho de la pantalla del usuario. funciona como un porcentaje pero directamente relativo al viewport del usuario
+
+-VH -> viewport height es una medida relativa al tamaño del alto de la pantalla del usuario- funciona como un porcentaje pero directamente relativo al viewport del usuario
+
+La diferencia de estas medidas con el % es que los porcentajes hacen referencia al tamaño del contenedor o elemento padre
+
+
+EM y REM 
+
+Son medidads relativas al tamaño de fuente (font-size)
+
+em esl el relativo al tamaño de font-size del contenedor o elemento padre
+
+rem es relativo al tamaño de font-size del elemento raiz (root)
+
+
+# REPASO_HTML_VJ_DWA_24_25 -- 03/10/24
+## CREAR UN LAYOUT RESPONSIVE
+
+Para crear un layout responsive y que tenga sentido en nuestra web debemos usar contenedores para organizar el contenido de la web.
+
+Estos contenedores serán etiquetas semánticas para seguir las normas de HTML5 y los navegadores modernos.
+
+## FLEXBOX
+
+FLEX BOX GUIDE -> https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+## MEDIA QUERIES
+
+Para realizar ajustes sobre un layout adaptativo (que habremos maquetado usando propiedades de Flexbox o de Grid) usaremos las media-queries.
+
+Se trata de una regla especiual de CSS que me permite detectar el tamaño del ancho de la pantalla del usuario y sobreescribir ciertos selectores y propiedades que me interesen para adaptar mi interfaz o layout.
+
+Estos media-queries siempre se encontraran al final del archivo de CSS debajo de mi codigo de CSS base.
+
+https://css-tricks.com/the-new-css-media-query-range-syntax/
