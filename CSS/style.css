@@ -7,6 +7,12 @@
 
 }
 
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
 header{
     height: 10vh;
     background-color: greenyellow;
@@ -15,19 +21,47 @@ header{
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
 
+body{
+    background-color: yellow;
+}
+
+.listas{
+    margin: 3em;
+   
+}
+
+.listas ul ol{
+    display: flex;
 }
 
 header button{
     width: 12rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    transition: 0.33s;
+    /* la propiedad transition siempre debe encontrarse en el estado inicial */
+}
 
+header button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transform: scale(1.1) rotate(360deg);
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2.5vw;
+    animation: animatetitle 3s infinite alternate;
+    
+}
 
+h2{
+    font-size: 1.5rem;
 }
 
 nav .menu-flex{
@@ -56,8 +90,47 @@ nav .menu-flex a:hover{
     border-radius: 10px;
 }
 
+section h2{
+    font-size: 3em;
+    text-align: center;
+}
+a img{
+    max-width: 25%;
+}
 
+/* GALLERY */
 
+#gallery{
+    background-color: bisque;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery .cont{
+    display: grid;
+    grid-template-columns: auto 50% auto;
+    gap: 1rem;
+}
+
+#gallery .cont img{
+    object-fit: cover;
+    height: 100%;
+}
+
+/* ANIMATIONS */
+@keyframes animatetitle {
+    0%{
+        color: aqua;
+    }
+
+    100%{
+        color: rebeccapurple;
+    }
+
+}
 
 
 /* MEDIA QUERY */
@@ -81,5 +154,9 @@ nav .menu-flex a:hover{
     
     section a img{
     display: none;
+    }
+
+    #gallery .cont{
+        grid-template-columns: auto;
     }
 }

@@ -36,6 +36,7 @@ EJ: AÑADIR ESTOS ELEMENTOS AL HTML:
     - Descargar una imagen (jpg o png o webp) y convertirla en un enlace a un artículo de wikipedia.
 
     - Agrupar 2 de los 3 parrafos dentro de otro elemento de HTML que funcione como un contenedor.
+
 # REPASO_HTML_VJ_DWA_24_25 -- 26/09/24
 ## CSS (Cascading Style Sheet)
 CSS no es un lenguaje de programación, es un lenguaje de estilos. Estos estilos agregan a nuestro HTML unas caracteristicas visuales y estructurales mas interesantes para el usuario y mas complejas en cuanto a funcionamiento.
@@ -62,7 +63,6 @@ Podemos añadir código CSS dentro del HTML en el elemento <head></head> usando 
 
 3. CSS externo en un archivo propio de CSS. ESTA SÍ ES ELA FORMA CORRECTA!.
 El archivo CSS se enlazará al HTML usando la etiqueda <link> dentro del elemento <head></head>
-
 ## SELECTORES BASICOS CSS
 
 1. Selectores de elemento (tag): seleccionan todos los elementos del mismo tipo por su nombre de etiqueta.
@@ -140,7 +140,6 @@ em esl el relativo al tamaño de font-size del contenedor o elemento padre
 
 rem es relativo al tamaño de font-size del elemento raiz (root)
 
-
 # REPASO_HTML_VJ_DWA_24_25 -- 03/10/24
 ## CREAR UN LAYOUT RESPONSIVE
 
@@ -161,3 +160,27 @@ Se trata de una regla especiual de CSS que me permite detectar el tamaño del an
 Estos media-queries siempre se encontraran al final del archivo de CSS debajo de mi codigo de CSS base.
 
 https://css-tricks.com/the-new-css-media-query-range-syntax/
+# REPASO_HTML_VJ_DWA_24_25 -- 10/10/24
+## GRID CSS LAYOUT
+
+Grid al igual que flexbox no es mas que un conjunto de propiedades para desarrollar interfaces adaptativas responsive.
+
+La estructura que debemos tener en nuestro HTML  para usar las propiedades de grid, es la misma que en Flexbox, es decir, un contenedor (que será nuestro contenedor grid) y una serie de elementos hijos.
+
+En nuestra web podremos maquetar algunas partes con las propiedades de flexbox y otras partes con Grid.
+
+## TRANSICIONES
+
+La propiedad transition me permite crear una transicion animada entre 2 estados de algun elemento.
+
+## TRANSFORM
+
+La propiedad transform es una propiedad especial que toma como valores funciones de XSS que me permiten modificar la forma, el tamaño, la posicion, la rotacion... de un elemento de forma fija a traves de un efecto :hover
+
+## ANIMATION
+
+Las animaciones de CSS permiten crear interpolaciones entre fotogramas clave.
+
+1) definir animacion con @keyframes y darle un nombre con sentido lógico
+2) aplicar la animacion al elemento con la propiedad animation
+3) 
