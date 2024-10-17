@@ -64,6 +64,7 @@ Podemos añadir código CSS dentro del HTML en el elemento <head></head> usando 
 
 3. CSS externo en un archivo propio de CSS. ESTA SÍ ES ELA FORMA CORRECTA!.
 El archivo CSS se enlazará al HTML usando la etiqueda <link> dentro del elemento <head></head>
+
 ## SELECTORES BASICOS CSS
 
 1. Selectores de elemento (tag): seleccionan todos los elementos del mismo tipo por su nombre de etiqueta.
@@ -245,3 +246,4 @@ Actualmente en la (v6) de JS existen 2 formas nuevas de declarar variables.
 - NUMBER (Números) -> tenemos 2 tipos de numeros: los enteros (integer o int) y los decimales (float).
 
 - Boolean (booleana) -> true ó false
+
