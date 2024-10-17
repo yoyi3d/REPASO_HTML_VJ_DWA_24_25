@@ -38,6 +38,7 @@ EJ: AÑADIR ESTOS ELEMENTOS AL HTML:
     - Agrupar 2 de los 3 parrafos dentro de otro elemento de HTML que funcione como un contenedor.
 
 # REPASO_HTML_VJ_DWA_24_25 -- 26/09/24
+
 ## CSS (Cascading Style Sheet)
 CSS no es un lenguaje de programación, es un lenguaje de estilos. Estos estilos agregan a nuestro HTML unas caracteristicas visuales y estructurales mas interesantes para el usuario y mas complejas en cuanto a funcionamiento.
 Es indispensable el uso de CSS para crear una interfaz responsive.
@@ -141,6 +142,7 @@ em esl el relativo al tamaño de font-size del contenedor o elemento padre
 rem es relativo al tamaño de font-size del elemento raiz (root)
 
 # REPASO_HTML_VJ_DWA_24_25 -- 03/10/24
+
 ## CREAR UN LAYOUT RESPONSIVE
 
 Para crear un layout responsive y que tenga sentido en nuestra web debemos usar contenedores para organizar el contenido de la web.
@@ -160,7 +162,9 @@ Se trata de una regla especiual de CSS que me permite detectar el tamaño del an
 Estos media-queries siempre se encontraran al final del archivo de CSS debajo de mi codigo de CSS base.
 
 https://css-tricks.com/the-new-css-media-query-range-syntax/
+
 # REPASO_HTML_VJ_DWA_24_25 -- 10/10/24
+
 ## GRID CSS LAYOUT
 
 Grid al igual que flexbox no es mas que un conjunto de propiedades para desarrollar interfaces adaptativas responsive.
@@ -183,4 +187,61 @@ Las animaciones de CSS permiten crear interpolaciones entre fotogramas clave.
 
 1) definir animacion con @keyframes y darle un nombre con sentido lógico
 2) aplicar la animacion al elemento con la propiedad animation
-3) 
+
+# REPASO_HTML_VJ_DWA_24_25 -- 17/10/24
+
+## JAVASCRIPT (JAVASCRIPT NATIVO Ó VANILLA JS)
+
+Es el único lenguaje de programación que funciona en el lado del cliente.
+
+JS es interpretado por el navegador y no necesita ser compilado.
+
+Javascript es un lenguaje debilmente tipado.
+
+3 Formas diferentes de añadir código de JS a nuestro HTML (A nuestra web).
+    
+1) Directamente en los elementos de HTML. Mediante atributos de tipo evento podemos llamar a funciones de JS pero esta no es la mas correcta.
+    
+    <button onclick="alert('Hola soy un popup!')">Call to Action</button>
+
+
+2) Usando el elemento de HTML <script></script> que me permite añadir codigo de JS dentro del elemento. Podemos cargar este elemento y el código de JS en el <head></head> de nuestro HTML (esto lo reservaremos para cargar libreríoas de JS).
+    
+    <script>
+        console.log("Hola Soy codigo de JS en el head");
+    </script>
+
+Tambén se puede encontrar justo antes del cierre del <body></body> esta forma es mas correcta que cargarlo en el <head></head> ya que permite que se haya cargado todo el código HTML previamente.
+
+
+3) Enlazar un archivo externo de JS a nuestro HTML (a diferencia del CSS se enlaza en el <body></body>)
+    
+    <script src="JS/scripts.js"></script>
+
+
+## VARIABLES DE JS
+
+Para declarar una variable JS de la corma clásica o (v5) usaremos la palabra reservada -> var
+
+1) declaramos variable y le damos un nombre.
+2) le asignamos un valor a la variable con el simbolo [=](asignación)
+3) Llamar a la variable o invocarla o hacer referencia.
+    var myname = "Yoyi";
+
+A las variables se les puede reasignar un valor nuevo tantas veces como sea necesario.
+
+Las variables pueden contener en el nombre: letras (Mayus - Minus), numeros y giones bajos (_).
+
+Actualmente en la (v6) de JS existen 2 formas nuevas de declarar variables.
+
+- let ( sustituye a var)
+- const -> este tipo de variables (constantes) no permiten reasignar un nuevo valor.
+
+
+## TIPOS DE DATOS DE JS
+
+- String (Cadena de caracteres ó texto) -> Puede contener: letras, numeros, caracteres especieales y espacios. Siempre estará contenido entre comillas dobles o simples dependiendo de la situación.
+
+- NUMBER (Números) -> tenemos 2 tipos de numeros: los enteros (integer o int) y los decimales (float).
+
+- Boolean (booleana) -> true ó false

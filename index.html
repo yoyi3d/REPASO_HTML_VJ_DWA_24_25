@@ -7,13 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Repaso HTML | DWA</title>
         <link rel="stylesheet" href="/CSS/style.css">
+
+        <script>
+            console.log("Hola Soy codigo de JS en el head");
+        </script>
     </head>
 
     <body>
         <header>
             
             <h1>REPASO HTML | DWA</h1>
-            <button>Call to Action</button>
+            <button onclick="alert('Hola soy un popup!')">Call to Action</button>
             
         </header>
         
@@ -104,6 +108,14 @@
             </div>
         </section>
         
+
+
+        <!-- ESTE ES EL LUGAR SEGURO PARA CARGAR NUESTROS SCRIPTS -->
+         <script>
+            console.log("HOLA SOY CODIGO DE JS AL FINAL DEL BODY DEL HTML");
+         </script>
+
+         <script src="JS/scripts.js"></script>
     </body>
 
 </html>
