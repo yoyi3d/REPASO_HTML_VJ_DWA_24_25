@@ -239,6 +239,7 @@ Actualmente en la (v6) de JS existen 2 formas nuevas de declarar variables.
 - const -> este tipo de variables (constantes) no permiten reasignar un nuevo valor.
 
 
+
 ## TIPOS DE DATOS DE JS
 
 - String (Cadena de caracteres ó texto) -> Puede contener: letras, numeros, caracteres especieales y espacios. Siempre estará contenido entre comillas dobles o simples dependiendo de la situación.
@@ -247,3 +248,72 @@ Actualmente en la (v6) de JS existen 2 formas nuevas de declarar variables.
 
 - Boolean (booleana) -> true ó false
 
+- NaN (Not a numbver) -> es un tipo de dato que aparecerá como resultado cuando intentemos hacer un calculo y JS no sepa resolverlo
+    console.log(myName * 77)
+
+- Array (lista) [] -> Se trata de un tipo de dato que me permite crear un conjunto de otros tipos de datos. Estos elementos de un array pueden ser todos del mismo tipo o diferentes tipos
+
+- Object (Objeto) {} -> son un tipo de dato complejo que me permite guardar de forma ordenada otros tipos de datos siguiendo el formato -> clave: valor, (key-value)
+
+# REPASO_HTML_VJ_DWA_24_25 -- 24/10/24
+
+
+## COMPARACIONES DE JS:
+
+- Mayor que (>)
+
+- Menor que (<)
+
+- Mayor o igual que (>=)
+
+- Menor o igual que (<=)
+
+- Igual que (==) (comparación no estricta ó debil)
+    let num1= 76;
+    let num2= "76";
+    console.log(num1 == num2); True
+
+- Totalmente igual que (===) [Comparación estricta compara el tipo de dato]
+    
+    let num1= 76;
+    let num2= "76";
+    console.log(num1 === num2); False
+
+- Diferente que (!=)
+
+- Totalmente Diferente !== [Compara por tipo]
+
+
+## OPERADORES LÓGICOS O PUERTAS LOGICAS:
+
+- AND lógico -> (&&)
+- OR lógico -> (||)
+- NOT lógico -> (!)
+
+
+## FUNCIONES DE JS:
+
+Una función o método, es un conjunto de instrucciones en forma de líneas de codigo que cumplen un trabajo determinado.
+
+Las funciones de JS trabajan como una "caja negra".
+Nosotros llamamos o usamos una función por que sabemos que es lo que hace, pero internamente no sabemos como funciona. Esto en caso de que usemos funciones ya definidas. 
+
+Existen funciones que trabajan dandonos simplemente un output o resultado de su trabajo y existen muchas otras funciones que admiten o necesitan un input para poder trabajar y darnos un output.
+
+Tenemos 2 tipos de funciones en JS:
+
+1) Las funciones de JS ya definidas en el core del lenguaje que nosotros podemos usar para hacer un trabajo determinado. EJ: las funciones alert(), log() o prompt() son funciones de este tipo que se conocen como funciones built-in.
+
+2) Las funciones de JS que nosotros mismos podemos definir desde cero con nuestro propio código. Estas funciones una vez declaradas las podemos usar tantas veces como necesitemos.
+
+Instrucciones para crear y usar una función propia:
+
+1. Declaramos la función con la palabra reservada function:
+
+2. Le damos un nombre a la función. El nombre lo decidimos nosotros y debe representar de forma clara el trabajo que cumple dicha función. El nombre de la función incluye unos parentesis al final.
+
+3. Escribir el código interno o la lógica de la función.
+
+4. Usar la función llamandola o invoncandola.
+
+Para que una funcion acepte parámetros de entrada, debemos definirlos en el parentesis de la función de la variable.

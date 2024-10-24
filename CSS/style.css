@@ -66,7 +66,7 @@ h2{
 nav .menu-flex{
     background-color: rgb(129, 129, 206);
     list-style: none;
-    padding: 2rem;
+    padding: 1rem;
     /* gap: 1rem; */
 
     justify-content: space-around;
@@ -76,7 +76,8 @@ nav .menu-flex{
 
 nav .menu-flex a{
     background-color: black;
-    padding: 0.3rem;
+    border: 3px solid white;
+    padding: 0.5rem;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -85,6 +86,7 @@ nav .menu-flex a{
 }
 
 nav .menu-flex a:hover{
+    border: 3px solid red;
     color: red;
     border-radius: 10px;
 }
