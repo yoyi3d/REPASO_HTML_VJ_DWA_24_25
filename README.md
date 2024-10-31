@@ -317,3 +317,56 @@ Instrucciones para crear y usar una función propia:
 4. Usar la función llamandola o invoncandola.
 
 Para que una funcion acepte parámetros de entrada, debemos definirlos en el parentesis de la función de la variable.
+
+# REPASO_HTML_VJ_DWA_24_25 -- 31/10/24
+
+## SELECTORES DE JS
+
+Con los selectores de js podemos seleccionar elementos del HTML y modificarlos o manipularlos.
+
+Para JS el HTML se representa en forma de arbol de nodos conocido como DOM (Document Object Model).
+
+La variable global Document (cque se genera automáticamente cuando se carga la web), contiene todo el HTML y podremos seleccionar diferentes elemntos usando los diferentes selectores de JS.
+
+- getElementsByTagName() -> selecciona uno ovarios elemntos que coincidan con el nombre de la etiqueta de HTML que le pasamos como parametro a la función. ESTA FUNCIÓN DEVUELVE SIEMPRE UN ARRAY.
+
+- getElementsByClassName() -> selecciona por clase y devuelve un array.
+
+- getElementById() -> busca un ID en el DOM y devuelve el elemento con ese ID.
+
+### Selectores tipo query con sintaxis de CSS
+
+- querySelector() -> selecciona un elemento y recibe como parametro un selector tipo CSS (si este selector coincide con varios elementos de HTML seleccionará el primero). lo que va dentro de este selector es un selector de CSS.
+
+- querySelectorAll() -> igual que el anterior pero devuelve todos los elementos en un array.
+
+
+
+### SETTERS Y GETTERS DE JS
+
+En todos los elementos del HTML diferentes propiedades de las cuales podemos  obtener su valor (get) o modificar y asignar nuevos valores (set).
+
+### EVENTOS DE JS
+
+Los usuarios dentro de las páginas web pueden "Disparar" (trigger) diferentes eventos, mediante JS podemos "Capturar" estos eventos y/o hacer algo en respuesta. Algunos ejemplos de eventos:
+
+- Detectar cuando -> se ha cargado completamente el HTML.
+
+- Detectar cuando -> el usuario hace click sobre un elemnto(tambien existe el evento dobleclick, rueda del raton....).
+
+- Detectar cuando -> el usuario hace scroll (sobre toda la web o sobre un elemento determinado).
+
+- Detectar cuando -> un campo Input cambia de valor.
+
+- Detectar cuando -> el cursor pasa por encima de un elemento -> con JS podemos diferenciar cuando el cursor entra encima del elementoy cuando sale.
+
+#### EJERCICIO
+
+Cuando el usuario pase con el cursor por encima del titulo de la web el color del fondo del header debe cambiar
+
+EXTRA -> cuando el cursor del usuario salga del titulo el color del header debe volver a ser el original
+
+EXTRA II -> cuando el cursor pase por encima del titulo cambiar el texto del h2 y asignarle "has hecho mouseover"
+
+PISTA -> los evento en los que se divide el hover en JS son: mouseover y mouseout
+
