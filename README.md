@@ -328,7 +328,7 @@ Para JS el HTML se representa en forma de arbol de nodos conocido como DOM (Docu
 
 La variable global Document (cque se genera automáticamente cuando se carga la web), contiene todo el HTML y podremos seleccionar diferentes elemntos usando los diferentes selectores de JS.
 
-- getElementsByTagName() -> selecciona uno ovarios elemntos que coincidan con el nombre de la etiqueta de HTML que le pasamos como parametro a la función. ESTA FUNCIÓN DEVUELVE SIEMPRE UN ARRAY.
+- getElementsByTagName() -> selecciona uno o varios elemntos que coincidan con el nombre de la etiqueta de HTML que le pasamos como parametro a la función. ESTA FUNCIÓN DEVUELVE SIEMPRE UN ARRAY.
 
 - getElementsByClassName() -> selecciona por clase y devuelve un array.
 

@@ -142,10 +142,10 @@ function greetUser() {
 // let sp_title = document.querySelector("#gallery");
 
 
-let title = document.querySelector("header h1");
-// console.log(title.textContent); // GET
-title.textContent = "Hola he cambiado!"; // SET
-title.style.color = "red"; // SET
+// let title = document.querySelector("header h1");
+// // console.log(title.textContent); // GET
+// title.textContent = "Hola he cambiado!"; // SET
+// title.style.color = "red"; // SET
 
 
 // console.log(title.style);
@@ -166,9 +166,15 @@ btn.addEventListener("click", function(){
 
 //-----------EJERCICIO----------------------------
 
-let headColor = document.querySelector("header");
-//  console.log(headColor);
-headColor.style.backgroundColor = "red";
-headColor.addEventListener("mouseover");
+// let headColor = document.querySelector("header");
+// //  console.log(headColor);
+// headColor.addEventListener("mouseover",()=>{header.style.color="red"});
+// // headColor.style.backgroundColor = "red";
+
+const header = document.querySelector("h1");
+let clHeader = document.querySelector("header");
+// console.log(header);
+header.addEventListener("mouseover",()=>{clHeader.style.backgroundColor="red"});
+header.addEventListener("mouseout",()=>{clHeader.style.backgroundColor="greenyellow"});
 
 //-------------------------------------------------
