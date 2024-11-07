@@ -126,10 +126,28 @@ a img{
     background-color: bisque;
     padding: 6rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     justify-content: center;
     align-items: center;
 }
+
+#gallery .gallerytitle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.daynight .fa-solid .fa-sun .on{
+    
+}
+
+#gallery .changecolor{
+    background-color: black;
+    color: white;
+}
+
+
 
 #gallery .cont{
     display: grid;
