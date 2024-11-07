@@ -11,6 +11,9 @@
         <script>
             console.log("Hola Soy codigo de JS en el head");
         </script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
     <body>
@@ -23,9 +26,14 @@
             
         </header>
         
-        <nav>
+        <nav id="menu">
 
             <ul class="menu-flex">
+                
+                <li id="btnCloseMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </li>
+
                 <li>
                     <a href="#">HOME</a>
                 </li>
@@ -44,11 +52,17 @@
 
             </ul>
 
+            <div id="btnOpenMenu">
+
+                <i class="fa-solid fa-bars"></i>
+            
+            </div>
+
         </nav>
         
         <section>
             
-            <h2>Subtitulo</h2>
+            <h2 class="subtitle">Subtitulo</h2>
             <h3>sub-subtitulo</h3>
             <div>
                 <p> <a href="https://es.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Lorem ipsum</a> dolor sit amet consectetur adipisicing elit. Maiores nisi quos illo corrupti architecto provident, mollitia exercitationem id facilis illum magni eveniet eum quod dolorem atque eius, culpa quibusdam. Recusandae.

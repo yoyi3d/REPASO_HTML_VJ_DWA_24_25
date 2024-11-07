@@ -1,3 +1,5 @@
+# LINKS UTILES
+
 # REPASO_HTML_VJ_DWA_24_25 -- 19/09/24
 
 El archivo index.html debe llamarse siempre así, para que el servidor web (cuando la web sea publica en internet) sepa que archivo debe cargar por defecto.
@@ -370,3 +372,7 @@ EXTRA II -> cuando el cursor pase por encima del titulo cambiar el texto del h2 
 
 PISTA -> los evento en los que se divide el hover en JS son: mouseover y mouseout
 
+
+# REPASO_HTML_VJ_DWA_24_25 -- 07/11/24
+
+## 

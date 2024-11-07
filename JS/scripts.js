@@ -171,10 +171,46 @@ btn.addEventListener("click", function(){
 // headColor.addEventListener("mouseover",()=>{header.style.color="red"});
 // // headColor.style.backgroundColor = "red";
 
-const header = document.querySelector("h1");
+
+const header = document.querySelector("header>h1");
 let clHeader = document.querySelector("header");
+// NO LO TENGO HECHO
+let subtitleH2 = document.querySelector(".subtitle");
 // console.log(header);
+
 header.addEventListener("mouseover",()=>{clHeader.style.backgroundColor="red"});
-header.addEventListener("mouseout",()=>{clHeader.style.backgroundColor="greenyellow"});
+header.addEventListener("mouseout",()=>{clHeader.style.backgroundColor=""});
+
 
 //-------------------------------------------------
+
+// Lógica para mostrar el menu movil cuandoe l usuario hace click en el icono de las barras.
+
+// Para abrir el menú cuando detectemos el click en el icono .fa-bars vamos a añadirle una clase al menu que contiene las opciones.
+
+// Para cerrar el menu vamos a detectar el click ene el icono .fa-xmark y le vamos a quitar la clase al menu ul
+
+var menuOpts = document.querySelector("#menu .menu-flex");
+var btnOpenMenu = document.querySelector("#btnOpenMenu .fa-bars");
+var btnCloseMenu = document.querySelector("#btnCloseMenu .fa-circle-xmark")
+
+btnOpenMenu.addEventListener("click", function(){
+    menuOpts.classList.add("show-menu");    
+
+});
+
+btnCloseMenu.addEventListener("click", function(){
+    menuOpts.classList.remove("show-menu")
+    
+});
+
+// ------E-J-E-R-C-I-C-I-O----------------------------- //
+
+// Usando la función toggle() | Cambiar de modo claro a modo oscuro
+
+// Añadimos al HTML de la galeria un botón que al ser pulsado va a "apagar" el color de fondo de la galeria y a cambaiar el color del título.
+
+// Tenemos que declarar algunas clases de CSS
+
+
+
